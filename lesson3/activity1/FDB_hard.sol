@@ -49,7 +49,7 @@ contract FixedDepositBox_Hard {
     }
 
     // Receive function to handle the receiving of ether
-    receive() external payable {
+    receive() external {
         address userAddress = msg.sender;
 
         uint256 amountReceived =
